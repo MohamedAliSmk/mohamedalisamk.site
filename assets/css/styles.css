@@ -187,6 +187,19 @@ img {
 .home__data {
   align-self: center;
 }
+.home__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.home__buttons .button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.home__buttons .button--outline {
+  margin-left: 0;
+}
 .home__title {
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
@@ -232,6 +245,16 @@ img {
 }
 .button:hover {
   box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+}
+.button--outline {
+  background-color: transparent;
+  color: var(--first-color);
+  border: 2px solid var(--first-color);
+  margin-left: 0.75rem;
+}
+.button--outline:hover {
+  background-color: var(--first-color);
+  color: #fff;
 }
 
 /* ===== ABOUT =====*/
@@ -310,6 +333,48 @@ img {
 .work__container {
   row-gap: 2rem;
 }
+.work__item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.work__item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 8px 30px rgba(14, 36, 49, 0.2);
+}
+.work__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--first-color);
+  color: #fff;
+  font-size: 1.75rem;
+  transition: 0.3s;
+}
+.work__icon:hover {
+  opacity: 0.85;
+}
+.work__title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi);
+  margin-bottom: 0.25rem;
+}
+.work__company {
+  font-weight: var(--font-semi);
+  margin-bottom: 0.25rem;
+}
+.work__dates,
+.work__location {
+  font-size: var(--smaller-font-size);
+  color: hsl(var(--hue-color), 20%, 45%);
+}
 .work__img {
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
@@ -322,7 +387,88 @@ img {
   transform: scale(1.1);
 }
 
+/* ===== PROJECTS =====*/
+.projects__container {
+  row-gap: 1.5rem;
+}
+.projects__card {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.projects__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 8px 30px rgba(14, 36, 49, 0.2);
+}
+.projects__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+.projects__title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi);
+  color: var(--second-color);
+}
+.projects__title a {
+  color: var(--second-color);
+  transition: color 0.3s;
+}
+.projects__title a:hover {
+  color: var(--first-color);
+}
+.projects__badge {
+  display: inline-block;
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-semi);
+  padding: 0.2rem 0.6rem;
+  border-radius: 1rem;
+  background-color: hsl(var(--hue-color), 89%, 95%);
+  color: var(--first-color);
+}
+.projects__context {
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-semi);
+  color: var(--first-color);
+  margin-bottom: 0.75rem;
+}
+.projects__list {
+  padding-left: 1.25rem;
+}
+.projects__list li {
+  font-size: var(--smaller-font-size);
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  color: hsl(var(--hue-color), 20%, 35%);
+}
+.projects__list li:last-child {
+  margin-bottom: 0;
+}
+
 /* ===== CONTACT =====*/
+.contact__info {
+  text-align: center;
+}
+.contact__info p {
+  margin-bottom: var(--mb-4);
+}
+.contact__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.contact__links .button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.contact__links .button--outline {
+  margin-left: 0;
+}
 .contact__input {
   width: 100%;
   font-size: var(--normal-font-size);
@@ -408,6 +554,12 @@ img {
     column-gap: 2rem;
     padding-top: 2rem;
   }
+  .projects__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    padding-top: 2rem;
+  }
   .contact__form {
     width: 360px;
     padding-top: 2rem;
@@ -470,6 +622,11 @@ img {
   .work__container {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
+  }
+  .projects__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
   }
 }
 @media screen and (min-width: 992px) {

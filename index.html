@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mohamed Ali — Software Engineer specializing in Frappe, ERPNext, and backend development.">
 
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <!-- =====BOX ICONS===== -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons/css/boxicons.min.css">
 
-    <title>Portfolio website complete</title>
+    <title>Mohamed Ali | Software Engineer</title>
 </head>
 <body>
 <!--===== HEADER =====-->
@@ -24,7 +25,8 @@
             <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
             <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
             <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-            <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+            <li class="nav__item"><a href="#work" class="nav__link">Experience</a></li>
+            <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
             <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
     </div>
@@ -42,12 +44,17 @@
 <div class="home__data">
     <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Mohamed Ali</span><br> Software Engineer</h1>
 
-    <a href="#contact" class="button">Contact</a>
+    <div class="home__buttons">
+        <a href="#contact" class="button">Contact</a>
+        <a href="Mohamed_Ali_Hassan_Frappe_Senior_Resume.pdf" class="button button--outline" download>
+            <i class='bx bx-download'></i> Resume
+        </a>
+    </div>
 </div>
 
 <div class="home__social">
-    <a href="https://linkedin.com/in/mohammed-ali-smk-7800651a6" class="home__social-icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
-    <a href="https://github.com/MohamedAliSmk" class="home__social-icon" target="_blank"><i class='bx bxl-github' ></i></a>
+    <a href="https://linkedin.com/in/mohammed-ali-smk-7800651a6" class="home__social-icon" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin'></i></a>
+    <a href="https://github.com/MohamedAliSmk" class="home__social-icon" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></a>
 </div>
 
 <div class="home__img">
@@ -75,18 +82,18 @@
 
     <div>
         <h2 class="about__subtitle">I'am Mohamed Ali</h2>
-        <p class="about__text">Aspiring and motivated Software Engineer with a Bachelor's degree in Computer Engineering. Experienced in backend development, with a focus on ERP systems and strong proficiency in Python, MongoDB, and MySQL. Eager to apply skills and knowledge in a challenging and growth-oriented environment. Known for strong problem-solving abilities, leadership skills, and a passion for continuous learning in software engineering.</p>           
-    </div>                                   
+        <p class="about__text">Software Engineer with a Bachelor's degree in Computer Engineering and deep expertise in Frappe Framework and ERPNext. I build production-grade ERP systems — from open-source POS platforms to government fleet management and HR platforms — with a focus on Python backends, REST APIs, and scalable MySQL schema design. Passionate about solving complex business problems through clean architecture and continuous learning.</p>
+    </div>
 </div>
 </section>
 
 <!-- Skills Section -->
 <section class="skills section" id="skills">
     <h2 class="section-title">Skills</h2>
-    <div class="skills__container bd-grid">          
+    <div class="skills__container bd-grid">
         <div>
             <h2 class="skills__subtitle">Professional Skills</h2>
-            <p class="skills__text">Proficient in Python, Java, and JavaScript. Experienced with ERP systems and databases such as MongoDB and MySQL. Skilled in using frameworks like Frappe and ERPNext.</p>
+            <p class="skills__text">Proficient in Python, JavaScript, and Java. Experienced with Frappe Framework, ERPNext, MongoDB, and MySQL. Skilled in REST API design, role-based access control, and production deployment workflows.</p>
             <div class="skills__data">
                 <div class="skills__names">
                     <i class='bx bxl-python skills__icon'></i>
@@ -99,12 +106,22 @@
             </div>
             <div class="skills__data">
                 <div class="skills__names">
+                    <i class='bx bx-code-alt skills__icon'></i>
+                    <span class="skills__name">Frappe / ERPNext</span>
+                </div>
+                <div class="skills__bar skills__frappe" style="width: 90%;"></div>
+                <div>
+                    <span class="skills__percentage">90%</span>
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
                     <i class='bx bxl-javascript skills__icon'></i>
                     <span class="skills__name">JavaScript</span>
                 </div>
-                <div class="skills__bar skills__js" style="width: 60%;"></div>
+                <div class="skills__bar skills__js" style="width: 65%;"></div>
                 <div>
-                    <span class="skills__percentage">60%</span>
+                    <span class="skills__percentage">65%</span>
                 </div>
             </div>
             <div class="skills__data">
@@ -118,20 +135,42 @@
                 </div>
             </div>
         </div>
-        <div>              
+        <div>
             <img src="assets/img/work3.jpg" alt="Skills" class="skills__img">
         </div>
     </div>
 </section>
 
 
-<!--===== WORK =====-->
+<!--===== EXPERIENCE =====-->
 <section class="work section" id="work">
-<h2 class="section-title">WORK EXPERIENCE</h2>
+<h2 class="section-title">Experience</h2>
 <div class="work__container bd-grid">
     <div class="work__item">
-        <a href="https://www.linkedin.com/company/erpcloud-systems" class="work__img">
-            <img src="assets/img/work1.jpg" alt="ERPCloud.Systems" >
+        <a href="https://www.linkedin.com/company/brainwise-inc" class="work__icon" target="_blank" rel="noopener noreferrer" aria-label="BrainWise on LinkedIn">
+            <i class='bx bx-buildings'></i>
+        </a>
+        <div class="work__details">
+            <h3 class="work__title">Software Engineer</h3>
+            <p class="work__company">BrainWise · Full-time</p>
+            <p class="work__dates">Feb 2026 - Present</p>
+            <p class="work__location">Cairo, Egypt · Hybrid</p>
+        </div>
+    </div>
+    <div class="work__item">
+        <a href="https://www.linkedin.com/company/arabdt" class="work__icon" target="_blank" rel="noopener noreferrer" aria-label="ArabDT on LinkedIn">
+            <i class='bx bx-buildings'></i>
+        </a>
+        <div class="work__details">
+            <h3 class="work__title">Software Engineer</h3>
+            <p class="work__company">ArabDT · Full-time</p>
+            <p class="work__dates">Aug 2024 - Feb 2026 · 1 yr 7 mos</p>
+            <p class="work__location">Cairo, Egypt · Hybrid</p>
+        </div>
+    </div>
+    <div class="work__item">
+        <a href="https://www.linkedin.com/company/erpcloud-systems" class="work__icon" target="_blank" rel="noopener noreferrer" aria-label="ERPCloud.Systems on LinkedIn">
+            <i class='bx bx-buildings'></i>
         </a>
         <div class="work__details">
             <h3 class="work__title">Back-end Developer</h3>
@@ -140,20 +179,82 @@
             <p class="work__location">Egypt · On-site</p>
         </div>
     </div>
-    <div class="work__item">
-        <a href="https://www.linkedin.com/company/arabdt" class="work__img">
-            <img src="assets/img/work2.jpg" alt="ArabDT">
-        </a>
-        <div class="work__details">
-            <h3 class="work__title">Software Engineer</h3>
-            <p class="work__company">ArabDT · Full-time</p>
-            <p class="work__dates">Aug 2024 - Present</p>
-            <p class="work__location">Cairo, Egypt · Hybrid</p>
-        </div>
-    </div>
 </div>
 </section>
 
+
+<!--===== PROJECTS =====-->
+<section class="projects section" id="projects">
+<h2 class="section-title">Projects</h2>
+<div class="projects__container bd-grid">
+    <article class="projects__card">
+        <div class="projects__header">
+            <h3 class="projects__title">
+                <a href="https://github.com/BrainWise-DEV/POSNext" target="_blank" rel="noopener noreferrer">POSNext</a>
+            </h3>
+            <span class="projects__badge">★ 120+ GitHub Stars</span>
+        </div>
+        <p class="projects__context">Open-Source ERPNext POS · BrainWise</p>
+        <ul class="projects__list">
+            <li>Modern, offline-capable POS system built on Frappe Framework — one of the most adopted ERPNext POS solutions</li>
+            <li>Contributed backend Python modules, Frappe API layer, MySQL schema design, and production deployment workflows</li>
+            <li>Implemented promotional engine, shift reporting, multi-warehouse and multi-payment support</li>
+        </ul>
+    </article>
+
+    <article class="projects__card">
+        <div class="projects__header">
+            <h3 class="projects__title">ArabDT HR &amp; Admin System</h3>
+        </div>
+        <p class="projects__context">ArabDT</p>
+        <ul class="projects__list">
+            <li>Full ERPNext-based HR platform: employee records, permissions, leave applications, attendance, and reporting</li>
+            <li>Custom Frappe app with complex role-based access control and automated approval workflows</li>
+        </ul>
+    </article>
+
+    <article class="projects__card">
+        <div class="projects__header">
+            <h3 class="projects__title">Hodori Attendance App</h3>
+        </div>
+        <p class="projects__context">ArabDT</p>
+        <ul class="projects__list">
+            <li>Real-time attendance system with ERPNext backend and mobile integration for live check-ins and shift reporting</li>
+            <li>REST API-driven architecture enabling seamless mobile-to-ERP data sync</li>
+        </ul>
+    </article>
+
+    <article class="projects__card">
+        <div class="projects__header">
+            <h3 class="projects__title">General Administration System</h3>
+        </div>
+        <p class="projects__context">Egyptian Ministry of Interior</p>
+        <ul class="projects__list">
+            <li>Government-grade ERPNext solution for police vehicle fleet management with secure data handling requirements</li>
+        </ul>
+    </article>
+
+    <article class="projects__card">
+        <div class="projects__header">
+            <h3 class="projects__title">Internal CRM System</h3>
+        </div>
+        <p class="projects__context">ArabDT</p>
+        <ul class="projects__list">
+            <li>Custom Frappe-based CRM with tailored DocTypes, dashboards, and sales pipeline automation</li>
+        </ul>
+    </article>
+
+    <article class="projects__card">
+        <div class="projects__header">
+            <h3 class="projects__title">Lawyer Office Management System</h3>
+        </div>
+        <p class="projects__context">Frappe / ERPNext · Arabic RTL</p>
+        <ul class="projects__list">
+            <li>Frappe/ERPNext system with Arabic RTL support: Legal Case, Court Session, and Case Document DocTypes with React frontend</li>
+        </ul>
+    </article>
+</div>
+</section>
 
 
 <!--===== CONTACT =====-->
@@ -161,21 +262,27 @@
     <h2 class="section-title">Contact</h2>
 
     <div class="contact__container bd-grid">
-        <form action="" class="contact__form">
-            <input type="text" placeholder="Name" class="contact__input">
-            <input type="mail" placeholder="Email" class="contact__input">
-            <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-            <input type="button" value="Send" class="contact__button button">
-        </form>
+        <div class="contact__info">
+            <p>Interested in working together? Reach out via LinkedIn or GitHub.</p>
+            <div class="contact__links">
+                <a href="https://linkedin.com/in/mohammed-ali-smk-7800651a6" class="button" target="_blank" rel="noopener noreferrer">
+                    <i class='bx bxl-linkedin'></i> LinkedIn
+                </a>
+                <a href="https://github.com/MohamedAliSmk" class="button button--outline" target="_blank" rel="noopener noreferrer">
+                    <i class='bx bxl-github'></i> GitHub
+                </a>
+                <a href="Mohamed_Ali_Hassan_Frappe_Senior_Resume.pdf" class="button button--outline" download>
+                    <i class='bx bx-download'></i> Download Resume
+                </a>
+            </div>
+        </div>
     </div>
 </section>
 </main>
 
-
-    </main>
 <!--===== FOOTER =====-->
 <footer class="footer">
-<p class="footer__title">© 2024 Mohamed Ali. All Rights Reserved.</p>
+<p class="footer__title">© 2026 Mohamed Ali. All Rights Reserved.</p>
 </footer>
 
 
