@@ -285,20 +285,6 @@ button {
   align-items: center;
 }
 
-@media (max-width: 899px) {
-  .hero-photo {
-    order: -1;
-  }
-
-  .photo-frame::before {
-    display: none;
-  }
-
-  .photo-frame {
-    width: min(100%, 16.5rem);
-  }
-}
-
 .eyebrow {
   color: var(--brass);
   font-size: 0.82rem;
@@ -687,6 +673,21 @@ button {
 
   .nav-list {
     align-items: center;
+  }
+}
+
+@media (max-width: 899px) {
+  .hero-photo {
+    order: -1;
+  }
+
+  .photo-frame {
+    width: min(100%, 16.5rem);
+  }
+
+  .photo-frame::before {
+    content: none;
+    display: none;
   }
 }
 
