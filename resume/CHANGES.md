@@ -11,7 +11,7 @@ Source of the old file: `Mohamed_Ali_Hassan_Frappe_Senior_Resume.pdf` (2 pages) 
 - Added website `https://mohamedalismk.github.io/mohamedalisamk.site/`.
 - Phone kept as +20 101 372 5009 and linked to `https://wa.me/201013725009`. WhatsApp is now named in the contact line.
 - Email `mohamedalismk@gmail.com` kept.
-- Location kept as **New Cairo, Egypt** (already on the old CV; more specific than “Cairo”).
+- Location kept as **New Cairo, Egypt** on the first rewrite (already on the old CV). Later shortened to **Cairo, Egypt** in the header so the real GitHub Pages URL could be printed in full.
 
 ## Summary
 
@@ -80,7 +80,7 @@ Source of the old file: `Mohamed_Ali_Hassan_Frappe_Senior_Resume.pdf` (2 pages) 
 
 - Header contact line now uses small decorative inline SVG icons (aria-hidden) before location, email, WhatsApp, LinkedIn, GitHub, and website.
 - Phone and WhatsApp are one item: WhatsApp icon + clickable `+20 101 372 5009` → `https://wa.me/201013725009`.
-- Visible link text kept as real selectable URLs (`linkedin.com/in/mohammed-ali-smk`, `github.com/MohamedAliSmk`). Website label is `mohamedalisamk.site` so the header stays on two lines; the href is still the full GitHub Pages URL.
+- Visible website text is the real address `mohamedalismk.github.io/mohamedalisamk.site` (not the non-resolving `mohamedalisamk.site` label). LinkedIn and GitHub stay as readable host/path text. Header may use a third line.
 
 ## Production notes
 
