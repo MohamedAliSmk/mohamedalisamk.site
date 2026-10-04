@@ -83,6 +83,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-h) + 0.75rem);
 }
 
 body {
@@ -284,6 +285,20 @@ button {
   align-items: center;
 }
 
+@media (max-width: 899px) {
+  .hero-photo {
+    order: -1;
+  }
+
+  .photo-frame::before {
+    display: none;
+  }
+
+  .photo-frame {
+    width: min(100%, 16.5rem);
+  }
+}
+
 .eyebrow {
   color: var(--brass);
   font-size: 0.82rem;
@@ -413,6 +428,11 @@ button {
 /* Sections */
 .section {
   padding: clamp(3.5rem, 8vw, 6rem) 0;
+  scroll-margin-top: calc(var(--header-h) + 0.5rem);
+}
+
+#contact {
+  min-height: calc(100svh - var(--header-h));
 }
 
 .section-alt {
