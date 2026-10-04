@@ -76,6 +76,12 @@ Source of the old file: `Mohamed_Ali_Hassan_Frappe_Senior_Resume.pdf` (2 pages) 
 - No new certifications, degrees, or languages.
 - NexDine and NexMove are named only; no extra product claims were added because none were provided.
 
+## Contact icons (follow-up)
+
+- Header contact line now uses small decorative inline SVG icons (aria-hidden) before location, email, WhatsApp, LinkedIn, GitHub, and website.
+- Phone and WhatsApp are one item: WhatsApp icon + clickable `+20 101 372 5009` → `https://wa.me/201013725009`.
+- Visible link text kept as real selectable URLs (`linkedin.com/in/mohammed-ali-smk`, `github.com/MohamedAliSmk`). Website label is `mohamedalisamk.site` so the header stays on two lines; the href is still the full GitHub Pages URL.
+
 ## Production notes
 
 - Rebuild: `resume/build-pdf.sh` (headless Chrome, no header/footer) writes `Mohamed_Ali_Hassan_Frappe_Senior_Resume.pdf` at the repo root so the site download link stays the same.
