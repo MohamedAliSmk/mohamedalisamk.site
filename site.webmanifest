@@ -1,0 +1,22 @@
+{
+  "name": "Mohammed Ali Samk",
+  "short_name": "M. Ali Samk",
+  "description": "Frappe & ERPNext Developer based in Cairo. Building SaaS products at BrainWise: POSNext, NexDine, and NexMove.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f1ea",
+  "theme_color": "#1b3a5f",
+  "icons": [
+    {
+      "src": "favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

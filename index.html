@@ -3,294 +3,363 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mohamed Ali — Software Engineer specializing in Frappe, ERPNext, and backend development.">
+    <title>Mohammed Ali Samk · Frappe &amp; ERPNext Developer</title>
+    <meta name="description" content="Mohammed Ali Samk is a Frappe &amp; ERPNext developer at BrainWise in Cairo. He builds SaaS products including POSNext, NexDine, and NexMove, with a background in HR, inventory, and sales systems.">
+    <meta name="author" content="Mohammed Ali Samk">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mohamedalismk.github.io/mohamedalisamk.site/">
 
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mohammed Ali Samk">
+    <meta property="og:title" content="Mohammed Ali Samk · Frappe &amp; ERPNext Developer">
+    <meta property="og:description" content="Frappe &amp; ERPNext developer at BrainWise in Cairo. Building SaaS products: POSNext, NexDine, and NexMove.">
+    <meta property="og:url" content="https://mohamedalismk.github.io/mohamedalisamk.site/">
+    <meta property="og:image" content="https://mohamedalismk.github.io/mohamedalisamk.site/assets/img/og-image.jpg">
+    <meta property="og:image:alt" content="Portrait of Mohammed Ali Samk, Frappe and ERPNext developer">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mohammed Ali Samk · Frappe &amp; ERPNext Developer">
+    <meta name="twitter:description" content="Frappe &amp; ERPNext developer at BrainWise in Cairo. Building SaaS products: POSNext, NexDine, and NexMove.">
+    <meta name="twitter:image" content="https://mohamedalismk.github.io/mohamedalisamk.site/assets/img/og-image.jpg">
+    <meta name="twitter:image:alt" content="Portrait of Mohammed Ali Samk, Frappe and ERPNext developer">
+
+    <meta name="theme-color" content="#f4f1ea" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#121720" media="(prefers-color-scheme: dark)">
+    <meta name="color-scheme" content="light dark">
+
+    <link rel="icon" href="favicon.ico" sizes="32x32">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <link rel="preload" as="image" href="assets/img/profile.webp" type="image/webp">
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!-- =====BOX ICONS===== -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons/css/boxicons.min.css">
+    <script>
+        (function () {
+            try {
+                var stored = localStorage.getItem("theme");
+                var theme = stored === "light" || stored === "dark"
+                    ? stored
+                    : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+                document.documentElement.setAttribute("data-theme", theme);
+            } catch (e) {
+                document.documentElement.setAttribute("data-theme", "light");
+            }
+        })();
+    </script>
 
-    <title>Mohamed Ali | Software Engineer</title>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mohammed Ali Samk",
+        "jobTitle": "Frappe & ERPNext Developer",
+        "description": "Frappe and ERPNext developer at BrainWise, building SaaS products including POSNext, NexDine, and NexMove.",
+        "url": "https://mohamedalismk.github.io/mohamedalisamk.site/",
+        "image": "https://mohamedalismk.github.io/mohamedalisamk.site/assets/img/profile.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Cairo",
+            "addressCountry": "EG"
+        },
+        "worksFor": {
+            "@type": "Organization",
+            "name": "BrainWise"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/mohammed-ali-smk",
+            "https://github.com/MohamedAliSmk"
+        ]
+    }
+    </script>
 </head>
 <body>
-<!--===== HEADER =====-->
-<header class="l-header">
-<nav class="nav bd-grid">
-    <div>
-        <a href="#" class="nav__logo">Mohamed Ali</a>
-    </div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
-            <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-            <li class="nav__item"><a href="#work" class="nav__link">Experience</a></li>
-            <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-        </ul>
-    </div>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo" href="#home">Mohammed Ali</a>
 
-    <div class="nav__toggle" id="nav-toggle">
-        <i class='bx bx-menu'></i>
-    </div>
-</nav>
-</header>
+            <nav class="nav" id="nav-menu" aria-label="Primary">
+                <ul class="nav-list">
+                    <li><a class="nav-link is-active" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#experience">Experience</a></li>
+                    <li><a class="nav-link" href="#projects">Projects</a></li>
+                    <li><a class="nav-link" href="#skills">Skills</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
 
-
-<main class="l-main">
-<!--===== HOME =====-->
-<section class="home bd-grid" id="home">
-<div class="home__data">
-    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Mohamed Ali</span><br> Software Engineer</h1>
-
-    <div class="home__buttons">
-        <a href="#contact" class="button">Contact</a>
-        <a href="Mohamed_Ali_Hassan_Frappe_Senior_Resume.pdf" class="button button--outline" download>
-            <i class='bx bx-download'></i> Resume
-        </a>
-    </div>
-</div>
-
-<div class="home__social">
-    <a href="https://linkedin.com/in/mohammed-ali-smk-7800651a6" class="home__social-icon" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin'></i></a>
-    <a href="https://github.com/MohamedAliSmk" class="home__social-icon" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></a>
-</div>
-
-<div class="home__img">
-    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <mask id="mask0" mask-type="alpha">
-            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-        </mask>
-        <g mask="url(#mask0)">
-            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
-        </g>
-    </svg>
-</div>
-</section>
-
-
-<!--===== ABOUT =====-->
-<section class="about section" id="about">
-<h2 class="section-title">About</h2>
-
-<div class="about__container bd-grid">
-    <div class="about__img">
-        <img src="assets/img/about.jpg" alt="About Me">
-    </div>
-
-    <div>
-        <h2 class="about__subtitle">I'am Mohamed Ali</h2>
-        <p class="about__text">Software Engineer with a Bachelor's degree in Computer Engineering and deep expertise in Frappe Framework and ERPNext. I build production-grade ERP systems — from open-source POS platforms to government fleet management and HR platforms — with a focus on Python backends, REST APIs, and scalable MySQL schema design. Passionate about solving complex business problems through clean architecture and continuous learning.</p>
-    </div>
-</div>
-</section>
-
-<!-- Skills Section -->
-<section class="skills section" id="skills">
-    <h2 class="section-title">Skills</h2>
-    <div class="skills__container bd-grid">
-        <div>
-            <h2 class="skills__subtitle">Professional Skills</h2>
-            <p class="skills__text">Proficient in Python, JavaScript, and Java. Experienced with Frappe Framework, ERPNext, MongoDB, and MySQL. Skilled in REST API design, role-based access control, and production deployment workflows.</p>
-            <div class="skills__data">
-                <div class="skills__names">
-                    <i class='bx bxl-python skills__icon'></i>
-                    <span class="skills__name">Python</span>
-                </div>
-                <div class="skills__bar skills__python" style="width: 90%;"></div>
-                <div>
-                    <span class="skills__percentage">90%</span>
-                </div>
-            </div>
-            <div class="skills__data">
-                <div class="skills__names">
-                    <i class='bx bx-code-alt skills__icon'></i>
-                    <span class="skills__name">Frappe / ERPNext</span>
-                </div>
-                <div class="skills__bar skills__frappe" style="width: 90%;"></div>
-                <div>
-                    <span class="skills__percentage">90%</span>
-                </div>
-            </div>
-            <div class="skills__data">
-                <div class="skills__names">
-                    <i class='bx bxl-javascript skills__icon'></i>
-                    <span class="skills__name">JavaScript</span>
-                </div>
-                <div class="skills__bar skills__js" style="width: 65%;"></div>
-                <div>
-                    <span class="skills__percentage">65%</span>
-                </div>
-            </div>
-            <div class="skills__data">
-                <div class="skills__names">
-                    <i class='bx bx-data skills__icon'></i>
-                    <span class="skills__name">Databases</span>
-                </div>
-                <div class="skills__bar skills__db" style="width: 85%;"></div>
-                <div>
-                    <span class="skills__percentage">85%</span>
-                </div>
+            <div class="header-actions">
+                <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to dark mode">
+                    <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.75"/>
+                        <path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" d="M12 3v1.5M12 19.5V21M4.93 4.93l1.06 1.06M18.01 18.01l1.06 1.06M3 12h1.5M19.5 12H21M4.93 19.07l1.06-1.06M18.01 5.99l1.06-1.06"/>
+                    </svg>
+                    <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" d="M17.5 14.2A7.2 7.2 0 0 1 9.8 6.5 7 7 0 1 0 17.5 14.2Z"/>
+                    </svg>
+                </button>
+                <button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-controls="nav-menu" aria-expanded="false" aria-label="Open menu">
+                    <svg class="icon icon-menu" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/>
+                    </svg>
+                    <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/>
+                    </svg>
+                </button>
             </div>
         </div>
-        <div>
-            <img src="assets/img/work3.jpg" alt="Skills" class="skills__img">
-        </div>
-    </div>
-</section>
+    </header>
 
+    <div class="nav-backdrop" id="nav-backdrop" hidden></div>
 
-<!--===== EXPERIENCE =====-->
-<section class="work section" id="work">
-<h2 class="section-title">Experience</h2>
-<div class="work__container bd-grid">
-    <div class="work__item">
-        <a href="https://www.linkedin.com/company/brainwise-inc" class="work__icon" target="_blank" rel="noopener noreferrer" aria-label="BrainWise on LinkedIn">
-            <i class='bx bx-buildings'></i>
-        </a>
-        <div class="work__details">
-            <h3 class="work__title">Software Engineer</h3>
-            <p class="work__company">BrainWise · Full-time</p>
-            <p class="work__dates">Feb 2026 - Present</p>
-            <p class="work__location">Cairo, Egypt · Hybrid</p>
-        </div>
-    </div>
-    <div class="work__item">
-        <a href="https://www.linkedin.com/company/arabdt" class="work__icon" target="_blank" rel="noopener noreferrer" aria-label="ArabDT on LinkedIn">
-            <i class='bx bx-buildings'></i>
-        </a>
-        <div class="work__details">
-            <h3 class="work__title">Software Engineer</h3>
-            <p class="work__company">ArabDT · Full-time</p>
-            <p class="work__dates">Aug 2024 - Feb 2026 · 1 yr 7 mos</p>
-            <p class="work__location">Cairo, Egypt · Hybrid</p>
-        </div>
-    </div>
-    <div class="work__item">
-        <a href="https://www.linkedin.com/company/erpcloud-systems" class="work__icon" target="_blank" rel="noopener noreferrer" aria-label="ERPCloud.Systems on LinkedIn">
-            <i class='bx bx-buildings'></i>
-        </a>
-        <div class="work__details">
-            <h3 class="work__title">Back-end Developer</h3>
-            <p class="work__company">ERPCloud.Systems · Full-time</p>
-            <p class="work__dates">Sep 2023 - Aug 2024 · 1 yr</p>
-            <p class="work__location">Egypt · On-site</p>
-        </div>
-    </div>
-</div>
-</section>
+    <main id="main">
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Frappe &amp; ERPNext Developer</p>
+                    <h1>Mohammed Ali Samk</h1>
+                    <p class="lede">I build ERP and SaaS products on Frappe and ERPNext at BrainWise — including POSNext, NexDine, and NexMove. Python, Vue.js, and the operational side of HR, inventory, and sales.</p>
+                    <p class="hero-meta">
+                        <span>Cairo, Egypt</span>
+                        <span aria-hidden="true">·</span>
+                        <span>B.Sc. Computer Engineering</span>
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#contact">Contact</a>
+                        <a class="btn btn-secondary" href="Mohamed_Ali_Hassan_Frappe_Senior_Resume.pdf" download>
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" d="M12 4v11m0 0-4-4m4 4 4-4M5 19h14"/></svg>
+                            Resume
+                        </a>
+                        <a class="btn btn-ghost" href="https://www.linkedin.com/in/mohammed-ali-smk" target="_blank" rel="noopener noreferrer me">
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.5 9H4V20h2.5V9ZM5.25 4A1.75 1.75 0 1 0 5.25 7.5 1.75 1.75 0 0 0 5.25 4ZM20 20h-2.5v-5.6c0-1.8-.7-2.4-1.7-2.4s-1.8.9-1.8 2.5V20H11.5V9H14v1.3c.6-.9 1.7-1.6 3.1-1.6 2.3 0 2.9 1.6 2.9 4.2V20Z"/></svg>
+                            LinkedIn
+                        </a>
+                        <a class="btn btn-ghost" href="https://github.com/MohamedAliSmk" target="_blank" rel="noopener noreferrer me">
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.58 9.58 0 0 1 12 6.8a9.6 9.6 0 0 1 2.5.34c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
 
-
-<!--===== PROJECTS =====-->
-<section class="projects section" id="projects">
-<h2 class="section-title">Projects</h2>
-<div class="projects__container bd-grid">
-    <article class="projects__card">
-        <div class="projects__header">
-            <h3 class="projects__title">
-                <a href="https://github.com/BrainWise-DEV/POSNext" target="_blank" rel="noopener noreferrer">POSNext</a>
-            </h3>
-            <span class="projects__badge">★ 120+ GitHub Stars</span>
-        </div>
-        <p class="projects__context">Open-Source ERPNext POS · BrainWise</p>
-        <ul class="projects__list">
-            <li>Modern, offline-capable POS system built on Frappe Framework — one of the most adopted ERPNext POS solutions</li>
-            <li>Contributed backend Python modules, Frappe API layer, MySQL schema design, and production deployment workflows</li>
-            <li>Implemented promotional engine, shift reporting, multi-warehouse and multi-payment support</li>
-        </ul>
-    </article>
-
-    <article class="projects__card">
-        <div class="projects__header">
-            <h3 class="projects__title">ArabDT HR &amp; Admin System</h3>
-        </div>
-        <p class="projects__context">ArabDT</p>
-        <ul class="projects__list">
-            <li>Full ERPNext-based HR platform: employee records, permissions, leave applications, attendance, and reporting</li>
-            <li>Custom Frappe app with complex role-based access control and automated approval workflows</li>
-        </ul>
-    </article>
-
-    <article class="projects__card">
-        <div class="projects__header">
-            <h3 class="projects__title">Hodori Attendance App</h3>
-        </div>
-        <p class="projects__context">ArabDT</p>
-        <ul class="projects__list">
-            <li>Real-time attendance system with ERPNext backend and mobile integration for live check-ins and shift reporting</li>
-            <li>REST API-driven architecture enabling seamless mobile-to-ERP data sync</li>
-        </ul>
-    </article>
-
-    <article class="projects__card">
-        <div class="projects__header">
-            <h3 class="projects__title">General Administration System</h3>
-        </div>
-        <p class="projects__context">Egyptian Ministry of Interior</p>
-        <ul class="projects__list">
-            <li>Government-grade ERPNext solution for police vehicle fleet management with secure data handling requirements</li>
-        </ul>
-    </article>
-
-    <article class="projects__card">
-        <div class="projects__header">
-            <h3 class="projects__title">Internal CRM System</h3>
-        </div>
-        <p class="projects__context">ArabDT</p>
-        <ul class="projects__list">
-            <li>Custom Frappe-based CRM with tailored DocTypes, dashboards, and sales pipeline automation</li>
-        </ul>
-    </article>
-
-    <article class="projects__card">
-        <div class="projects__header">
-            <h3 class="projects__title">Lawyer Office Management System</h3>
-        </div>
-        <p class="projects__context">Frappe / ERPNext · Arabic RTL</p>
-        <ul class="projects__list">
-            <li>Frappe/ERPNext system with Arabic RTL support: Legal Case, Court Session, and Case Document DocTypes with React frontend</li>
-        </ul>
-    </article>
-</div>
-</section>
-
-
-<!--===== CONTACT =====-->
-<section class="contact section" id="contact">
-    <h2 class="section-title">Contact</h2>
-
-    <div class="contact__container bd-grid">
-        <div class="contact__info">
-            <p>Interested in working together? Reach out via LinkedIn or GitHub.</p>
-            <div class="contact__links">
-                <a href="https://linkedin.com/in/mohammed-ali-smk-7800651a6" class="button" target="_blank" rel="noopener noreferrer">
-                    <i class='bx bxl-linkedin'></i> LinkedIn
-                </a>
-                <a href="https://github.com/MohamedAliSmk" class="button button--outline" target="_blank" rel="noopener noreferrer">
-                    <i class='bx bxl-github'></i> GitHub
-                </a>
-                <a href="Mohamed_Ali_Hassan_Frappe_Senior_Resume.pdf" class="button button--outline" download>
-                    <i class='bx bx-download'></i> Download Resume
-                </a>
+                <div class="hero-photo">
+                    <div class="photo-frame">
+                        <picture>
+                            <source srcset="assets/img/profile.webp" type="image/webp">
+                            <img src="assets/img/profile.jpg" alt="Headshot of Mohammed Ali Samk in a navy suit and glasses" width="400" height="400" fetchpriority="high">
+                        </picture>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="container split">
+                <header class="section-heading">
+                    <p class="section-kicker">01</p>
+                    <h2>About</h2>
+                </header>
+                <div class="prose">
+                    <p>I’m a Frappe and ERPNext developer based in Cairo, with a Bachelor’s in Computer Engineering. At BrainWise I work in an Agile team shipping SaaS products — POSNext, NexDine, and NexMove — with a focus on the backends, APIs, and business workflows that keep those systems honest.</p>
+                    <p>Before that I was the sole engineer responsible for the HR system of a corporate group at ArabDT, with branches in Egypt, Saudi Arabia, and the UAE. I also built an HR mobile app as a SaaS product and picked up Agile and product management along the way.</p>
+                    <p>Earlier, at ERPCloud.Systems, I worked on government ERPNext projects covering stock, selling, buying, workflows, and parts of HR, including the Police Vehicles General Administration project at the Ministry of Interior.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="experience">
+            <div class="container">
+                <header class="section-heading">
+                    <p class="section-kicker">02</p>
+                    <h2>Experience</h2>
+                </header>
+
+                <ol class="timeline">
+                    <li class="timeline-item">
+                        <div class="timeline-meta">
+                            <p class="timeline-dates">Feb 2026 — Present</p>
+                            <p class="timeline-place">Cairo, Egypt</p>
+                        </div>
+                        <div class="timeline-body">
+                            <h3>Software Engineer</h3>
+                            <p class="timeline-org">
+                                <a href="https://www.linkedin.com/company/brainwise-inc" target="_blank" rel="noopener noreferrer">BrainWise</a>
+                            </p>
+                            <p>Building products in an Agile team, including <a href="https://github.com/BrainWise-DEV/POSNext" target="_blank" rel="noopener noreferrer">POSNext</a> — an open-source Frappe/ERPNext point of sale — as well as NexDine and NexMove.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-meta">
+                            <p class="timeline-dates">Aug 2024 — Feb 2026</p>
+                            <p class="timeline-place">Cairo, Egypt</p>
+                        </div>
+                        <div class="timeline-body">
+                            <h3>Software Engineer</h3>
+                            <p class="timeline-org">
+                                <a href="https://www.linkedin.com/company/arabdt" target="_blank" rel="noopener noreferrer">ArabDT</a>
+                            </p>
+                            <p>Sole engineer for the HR system of a corporate group with branches in Egypt, Saudi Arabia, and the UAE. Built an HR mobile app as a SaaS product, and learned Agile and product management in the process.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-meta">
+                            <p class="timeline-dates">Sep 2023 — Aug 2024</p>
+                            <p class="timeline-place">Egypt</p>
+                        </div>
+                        <div class="timeline-body">
+                            <h3>Back-end Developer</h3>
+                            <p class="timeline-org">
+                                <a href="https://www.linkedin.com/company/erpcloud-systems" target="_blank" rel="noopener noreferrer">ERPCloud.Systems</a>
+                            </p>
+                            <p>Government ERPNext projects covering stock, selling, buying, workflows, and parts of HR, including the Police Vehicles General Administration project at the Ministry of Interior.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="container">
+                <header class="section-heading">
+                    <p class="section-kicker">03</p>
+                    <h2>Projects</h2>
+                </header>
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-top">
+                            <h3>
+                                <a href="https://github.com/BrainWise-DEV/POSNext" target="_blank" rel="noopener noreferrer">
+                                    POSNext
+                                    <span class="sr-only">(opens in a new tab)</span>
+                                </a>
+                            </h3>
+                            <p class="badge">158 GitHub stars</p>
+                        </div>
+                        <p class="project-context">Open-source ERPNext POS · BrainWise</p>
+                        <ul>
+                            <li>Offline-capable point of sale built on the Frappe Framework</li>
+                            <li>Backend Python modules, Frappe APIs, MySQL schema, and production deployments</li>
+                            <li>Promotions, shift reporting, multi-warehouse and multi-payment support</li>
+                        </ul>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>ArabDT HR &amp; Admin System</h3>
+                        <p class="project-context">ArabDT</p>
+                        <ul>
+                            <li>ERPNext HR platform for employee records, permissions, leave, attendance, and reporting</li>
+                            <li>Custom Frappe app with role-based access and approval workflows</li>
+                        </ul>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Hodori Attendance App</h3>
+                        <p class="project-context">ArabDT</p>
+                        <ul>
+                            <li>Real-time attendance with an ERPNext backend and mobile check-ins</li>
+                            <li>REST APIs for live mobile-to-ERP sync and shift reporting</li>
+                        </ul>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>General Administration System</h3>
+                        <p class="project-context">Egyptian Ministry of Interior</p>
+                        <ul>
+                            <li>ERPNext fleet management for the Police Vehicles General Administration</li>
+                        </ul>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Internal CRM System</h3>
+                        <p class="project-context">ArabDT</p>
+                        <ul>
+                            <li>Custom Frappe CRM with DocTypes, dashboards, and sales-pipeline automation</li>
+                        </ul>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Lawyer Office Management System</h3>
+                        <p class="project-context">Frappe / ERPNext · Arabic RTL</p>
+                        <ul>
+                            <li>Legal Case, Court Session, and Case Document DocTypes, with Arabic RTL support and a React frontend</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="skills">
+            <div class="container">
+                <header class="section-heading">
+                    <p class="section-kicker">04</p>
+                    <h2>Skills</h2>
+                </header>
+
+                <div class="skill-groups">
+                    <div class="skill-group">
+                        <h3>Frameworks</h3>
+                        <ul class="tags">
+                            <li>Frappe Framework</li>
+                            <li>ERPNext</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Languages</h3>
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>JavaScript / Vue.js</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Data &amp; APIs</h3>
+                        <ul class="tags">
+                            <li>MySQL / MariaDB</li>
+                            <li>REST APIs</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Ways of working</h3>
+                        <ul class="tags">
+                            <li>Agile</li>
+                            <li>Product Management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="container split">
+                <header class="section-heading">
+                    <p class="section-kicker">05</p>
+                    <h2>Contact</h2>
+                </header>
+                <div class="contact-panel">
+                    <p>If you want to talk about Frappe, ERPNext, or product engineering, LinkedIn is the fastest way to reach me.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="https://www.linkedin.com/in/mohammed-ali-smk" target="_blank" rel="noopener noreferrer me">LinkedIn</a>
+                        <a class="btn btn-secondary" href="https://github.com/MohamedAliSmk" target="_blank" rel="noopener noreferrer me">GitHub</a>
+                        <a class="btn btn-ghost" href="Mohamed_Ali_Hassan_Frappe_Senior_Resume.pdf" download>Download resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2026 Mohammed Ali Samk</p>
+            <p class="footer-note">Cairo, Egypt</p>
         </div>
-    </div>
-</section>
-</main>
+    </footer>
 
-<!--===== FOOTER =====-->
-<footer class="footer">
-<p class="footer__title">© 2026 Mohamed Ali. All Rights Reserved.</p>
-</footer>
-
-
-
-<!--===== SCROLL REVEAL =====-->
-<script src="https://unpkg.com/scrollreveal"></script>
-
-<!--===== MAIN JS =====-->
-<script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js" defer></script>
 </body>
 </html>
