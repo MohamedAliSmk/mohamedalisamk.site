@@ -17,6 +17,9 @@
   --header-bg: rgba(244, 241, 234, 0.88);
   --ring: #2c6aa0;
   --hero-frame: #1b3a5f;
+  --photo-mat: #fffdf8;
+  --photo-edge: rgba(27, 58, 95, 0.14);
+  --photo-shadow: 0 18px 36px rgba(28, 36, 48, 0.12);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,6 +38,9 @@
     --header-bg: rgba(18, 23, 32, 0.86);
     --ring: #9ec0e4;
     --hero-frame: #2a384c;
+    --photo-mat: #1c2433;
+    --photo-edge: rgba(158, 192, 228, 0.28);
+    --photo-shadow: 0 18px 40px rgba(0, 0, 0, 0.42);
   }
 }
 
@@ -53,6 +59,9 @@
   --header-bg: rgba(18, 23, 32, 0.86);
   --ring: #9ec0e4;
   --hero-frame: #2a384c;
+  --photo-mat: #1c2433;
+  --photo-edge: rgba(158, 192, 228, 0.28);
+  --photo-shadow: 0 18px 40px rgba(0, 0, 0, 0.42);
 }
 
 :root {
@@ -386,29 +395,21 @@ button {
 }
 
 .photo-frame {
-  position: relative;
   width: min(100%, 20rem);
-}
-
-.photo-frame::before {
-  content: "";
-  position: absolute;
-  inset: 0.7rem -0.7rem -0.7rem 0.7rem;
-  border: 1px solid var(--border);
-  border-radius: calc(var(--radius) + 0.4rem);
-  z-index: 0;
+  padding: 0.38rem;
+  border-radius: 1.35rem;
+  background: var(--photo-mat);
+  box-shadow: 0 0 0 1px var(--photo-edge), var(--photo-shadow);
 }
 
 .photo-frame picture,
 .photo-frame img {
-  position: relative;
-  z-index: 1;
-  border-radius: var(--radius);
+  display: block;
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
-  border: 1px solid var(--hero-frame);
-  box-shadow: var(--shadow);
+  border: 0;
+  border-radius: 1.05rem;
 }
 
 /* Sections */
@@ -683,11 +684,6 @@ button {
 
   .photo-frame {
     width: min(100%, 16.5rem);
-  }
-
-  .photo-frame::before {
-    content: none;
-    display: none;
   }
 }
 

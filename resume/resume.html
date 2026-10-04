@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mohammed Ali Samk — Resume</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 14mm 15mm 14mm 15mm;
+        }
+
+        * { box-sizing: border-box; }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #1c2430;
+            font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+            font-size: 10.4pt;
+            line-height: 1.38;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        h1 {
+            margin: 0 0 3px;
+            font-size: 20pt;
+            letter-spacing: 0.02em;
+            font-weight: 700;
+            color: #1b3a5f;
+        }
+
+        .headline {
+            margin: 0 0 8px;
+            color: #3d4a5c;
+            font-size: 10.4pt;
+        }
+
+        .contact {
+            margin: 0 0 12px;
+            color: #3d4a5c;
+            font-size: 9.3pt;
+            line-height: 1.45;
+        }
+
+        .contact a { text-decoration: underline; text-underline-offset: 2px; }
+
+        h2 {
+            margin: 11px 0 6px;
+            padding-bottom: 3px;
+            border-bottom: 1.4px solid #1b3a5f;
+            color: #1b3a5f;
+            font-size: 11pt;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        p { margin: 0 0 8px; }
+
+        .skills p {
+            margin: 0 0 3px;
+        }
+
+        .skills strong {
+            color: #1b3a5f;
+        }
+
+        .job {
+            margin: 0 0 9px;
+            break-inside: avoid;
+            page-break-inside: avoid;
+        }
+
+        .job-head, .edu-head, .proj-head {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            align-items: baseline;
+        }
+
+        .job-head h3, .proj-head h3, .edu-head h3 {
+            margin: 0;
+            font-size: 10.6pt;
+            font-weight: 700;
+        }
+
+        .dates, .place {
+            white-space: nowrap;
+            color: #3d4a5c;
+            font-size: 9.4pt;
+        }
+
+        .org {
+            margin: 1px 0 3px;
+            color: #3d4a5c;
+            font-style: italic;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 16px;
+        }
+
+        li { margin: 0 0 2px; }
+
+        .project {
+            margin: 0 0 7px;
+            break-inside: avoid;
+            page-break-inside: avoid;
+        }
+
+        .muted { color: #3d4a5c; font-weight: 500; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mohammed Ali Samk</h1>
+        <p class="headline">Frappe &amp; ERPNext Developer · Python · Vue.js · HR, Inventory &amp; Sales</p>
+        <p class="contact">
+            New Cairo, Egypt
+            · <a href="mailto:mohamedalismk@gmail.com">mohamedalismk@gmail.com</a>
+            · <a href="https://wa.me/201013725009">+20 101 372 5009</a>
+            · <a href="https://www.linkedin.com/in/mohammed-ali-smk">linkedin.com/in/mohammed-ali-smk</a><br>
+            <a href="https://github.com/MohamedAliSmk">github.com/MohamedAliSmk</a>
+            · <a href="https://mohamedalismk.github.io/mohamedalisamk.site/">mohamedalismk.github.io/mohamedalisamk.site</a>
+            · WhatsApp <a href="https://wa.me/201013725009">wa.me/201013725009</a>
+        </p>
+    </header>
+
+    <section>
+        <h2>Professional summary</h2>
+        <p>Frappe and ERPNext developer at BrainWise, building SaaS products in an Agile team — including POSNext, an open-source Frappe/ERPNext point of sale (158 GitHub stars), plus NexDine and NexMove. Earlier work covers a corporate HR platform and government ERPNext systems across stock, selling, buying, workflows, and HR. Comfortable with Python backends, Vue.js, REST APIs, MySQL/MariaDB, and production ERPNext deployments.</p>
+    </section>
+
+    <section class="skills">
+        <h2>Technical skills</h2>
+        <p><strong>Frameworks:</strong> Frappe Framework, ERPNext — custom apps, DocTypes, workflows, reports, hooks, whitelisted APIs</p>
+        <p><strong>Languages:</strong> Python (primary), JavaScript / Vue.js, HTML, CSS, Node.js, NestJS, Express.js</p>
+        <p><strong>Data &amp; APIs:</strong> MySQL / InnoDB (schema design, indexing, query optimization), MariaDB, MongoDB, REST APIs, third-party API sync, Frappe client/server scripts</p>
+        <p><strong>Delivery:</strong> Git / GitHub, Linux server administration, production ERPNext deployment and maintenance, S3-compatible storage (MinIO)</p>
+        <p><strong>Ways of working:</strong> Agile / Scrum, JIRA, product management, code review, pre-commit (ruff, eslint)</p>
+    </section>
+
+    <section>
+        <h2>Experience</h2>
+
+        <article class="job">
+            <div class="job-head">
+                <h3>Software Engineer</h3>
+                <span class="dates">Feb 2026 – Present</span>
+            </div>
+            <p class="org">BrainWise · Cairo, Egypt</p>
+            <ul>
+                <li>Build SaaS products in an Agile team, including POSNext (open-source Frappe/ERPNext POS, 158 GitHub stars), NexDine, and NexMove.</li>
+                <li>Contribute backend Python modules, Frappe APIs, MySQL schema work, and production deployments for POSNext — invoicing, shift management, promotions, coupon validation, multi-payment and multi-currency flows.</li>
+                <li>Design whitelisted Python API endpoints for the POS frontend and third-party integrations; implement offline-first data sync with background reconciliation.</li>
+                <li>Maintain production ERPNext environments (deployment, upgrades, monitoring, hotfixes) and take part in open-source code review and pre-commit quality checks (ruff, eslint).</li>
+            </ul>
+        </article>
+
+        <article class="job">
+            <div class="job-head">
+                <h3>Software Engineer</h3>
+                <span class="dates">Aug 2024 – Feb 2026</span>
+            </div>
+            <p class="org">ArabDT · Cairo, Egypt</p>
+            <ul>
+                <li>Sole engineer for the HR system of a corporate group with branches in Egypt, Saudi Arabia, and the UAE.</li>
+                <li>Built an HR mobile app as a SaaS product, and practiced Agile and product management in that work.</li>
+                <li>Developed custom Frappe/ERPNext apps including the ArabDT HR Admin App, Hodori Attendance App, and an internal CRM.</li>
+                <li>Customized ERPNext HR modules (leave, employee records, operational workflows), integrated third-party APIs, and built SQL-powered HR and operations reports.</li>
+                <li>Automated backend workflows with Frappe hooks, scheduled jobs, and document events; maintained Linux production ERPNext environments and used JIRA for sprint planning.</li>
+            </ul>
+        </article>
+
+        <article class="job">
+            <div class="job-head">
+                <h3>Back-end Developer</h3>
+                <span class="dates">Sep 2023 – Aug 2024</span>
+            </div>
+            <p class="org">ERPCloud.Systems · Egypt</p>
+            <ul>
+                <li>Worked on government ERPNext projects covering stock, selling, buying, workflows, and parts of HR, including the Police Vehicles General Administration project at the Ministry of Interior.</li>
+                <li>Designed custom Frappe DocTypes, forms, and server-side logic, and built REST APIs for inventory, HR, and finance modules used by web and mobile clients.</li>
+                <li>Designed MySQL schemas and optimized queries for core ERP data flows.</li>
+            </ul>
+        </article>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+
+        <article class="project">
+            <div class="proj-head">
+                <h3>POSNext — Open-source ERPNext POS</h3>
+                <span class="muted">BrainWise · 158 GitHub stars</span>
+            </div>
+            <ul>
+                <li>Offline-capable point of sale on the Frappe Framework.</li>
+                <li>Backend Python modules, Frappe API layer, MySQL schema, and production deployment workflows.</li>
+                <li>Promotions, shift reporting, multi-warehouse and multi-payment support.</li>
+            </ul>
+        </article>
+
+        <article class="project">
+            <h3>ArabDT HR &amp; Admin System <span class="muted">· ArabDT</span></h3>
+            <ul>
+                <li>ERPNext HR platform for employee records, permissions, leave, attendance, and reporting.</li>
+                <li>Custom Frappe app with role-based access and approval workflows.</li>
+            </ul>
+        </article>
+
+        <article class="project">
+            <h3>Hodori Attendance App <span class="muted">· ArabDT</span></h3>
+            <ul>
+                <li>Real-time attendance with an ERPNext backend and mobile check-ins.</li>
+                <li>REST APIs for live mobile-to-ERP sync and shift reporting.</li>
+            </ul>
+        </article>
+
+        <article class="project">
+            <h3>General Administration System <span class="muted">· Egyptian Ministry of Interior</span></h3>
+            <ul>
+                <li>ERPNext fleet management for the Police Vehicles General Administration.</li>
+            </ul>
+        </article>
+
+        <article class="project">
+            <h3>Internal CRM System <span class="muted">· ArabDT</span></h3>
+            <ul>
+                <li>Custom Frappe CRM with DocTypes, dashboards, and sales-pipeline automation.</li>
+            </ul>
+        </article>
+
+        <article class="project">
+            <h3>Lawyer Office Management System <span class="muted">· Frappe / ERPNext · Arabic RTL</span></h3>
+            <ul>
+                <li>Legal Case, Court Session, and Case Document DocTypes, with Arabic RTL support and a React frontend.</li>
+            </ul>
+        </article>
+    </section>
+
+    <section>
+        <h2>Education &amp; certifications</h2>
+        <article class="job">
+            <div class="edu-head">
+                <h3>B.Sc. in Computer Engineering</h3>
+                <span class="dates">2018 – 2023</span>
+            </div>
+            <p class="org">Modern Academy Maadi, Egypt</p>
+        </article>
+        <article class="job">
+            <div class="edu-head">
+                <h3>Back-End Application Development with Node.js and Express</h3>
+                <span class="dates">Jun 2025</span>
+            </div>
+            <p class="org">edX Verified Certificate</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>Languages</h2>
+        <p>Arabic (native) · English (professional working proficiency)</p>
+    </section>
+</body>
+</html>
